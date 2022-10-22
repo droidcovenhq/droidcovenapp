@@ -1,0 +1,36 @@
+#!/bin/sh
+
+echo "Checks Started"
+
+# stash any unstaged changes
+git stash -q --keep-index
+
+# run the tests with the gradle wrapper
+./gradlew test
+
+# store the last exit code in a variable
+RESULT=$?
+
+# unstash the unstashed changes
+git stash pop -q
+# Format code using KtLint static analysis
+
+./gradlew app:ktlintCheck --daemon
+
+status=$?
+
+if [ "$status" != 0 ]
+ then
+    echo 1>&2 "Static analysis found violations it could not fix."
+    exit 1
+
+else
+  if [ "$RESULT" != 0 ]
+  then
+    echo 1>&2 "Unit Tests Failed"
+    exit 1
+else
+    echo "Formatting and Unit tests all passed"
+    exit 0
+    fi
+fi
