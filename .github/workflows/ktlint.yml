@@ -1,5 +1,7 @@
-name: Project
+name: Lint check
+
 on: [pull_request]
+
 jobs:
   ktlint:
     name: Check Code Quality
