@@ -1,3 +1,7 @@
+//plugins {
+//    id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
+//}
+
 buildscript {
     repositories {
         google()

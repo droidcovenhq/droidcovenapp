@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     id("dagger.hilt.android.plugin")
     id("kotlin-kapt")
+//    id("org.jlleitschuh.gradle.ktlint")
 }
 
 android {
@@ -99,3 +100,14 @@ dependencies {
     kaptAndroidTest(DaggerHilt.hiltCompiler)
     androidTestImplementation(Testing.testRunner)
 }
+
+
+//task.register("installGitHook", Copy::class) {
+//    def suffix("macos")
+//    from new File("${rootProject.rootDir}", "scripts/pre-commit-$suffix")
+//    into { new File("${rootProject.rootDir}.git/hooks") }
+//    rename("pre-commit-$suffix", 'pre-commit')
+//    fileMode 0775
+//}
+
+//tasks.getByPath(':app:preBuild').dependsOn installGitHook
