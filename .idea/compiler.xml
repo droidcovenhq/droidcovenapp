@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="Droid_Coven.app" target="11" />
+      <module name="Droid_Coven.goalcreation.goalcreation_data" target="11" />
+      <module name="Droid_Coven.goalcreation.goalcreation_domain" target="11" />
+      <module name="Droid_Coven.goalcreation.goalcreation_presentation" target="11" />
+      <module name="Droid_Coven.goaldetails.goaldetails_data" target="11" />
+      <module name="Droid_Coven.goaldetails.goaldetails_domain" target="11" />
+      <module name="Droid_Coven.goaldetails.goaldetails_presentation" target="11" />
+      <module name="Droid_Coven.goaltracker.goaltracker_data" target="11" />
+      <module name="Droid_Coven.goaltracker.goaltracker_domain" target="11" />
+      <module name="Droid_Coven.goaltracker.goaltracker_presentation" target="11" />
+      <module name="Droid_Coven.goalviewingsearch.goalviewingsearch_data" target="11" />
+      <module name="Droid_Coven.goalviewingsearch.goalviewingsearch_domain" target="11" />
+      <module name="Droid_Coven.goalviewingsearch.goalviewingsearch_presentation" target="11" />
+      <module name="Droid_Coven.home.home_data" target="11" />
+      <module name="Droid_Coven.home.home_domain" target="11" />
+      <module name="Droid_Coven.home.home_presentation" target="11" />
+      <module name="Droid_Coven.practice.quiz.quiz_data" target="11" />
+      <module name="Droid_Coven.practice.quiz.quiz_domain" target="11" />
+      <module name="Droid_Coven.practice.quiz.quiz_presentation" target="11" />
+      <module name="Droid_Coven.practice.quizprogress.quizprogress_data" target="11" />
+      <module name="Droid_Coven.practice.quizprogress.quizprogress_domain" target="11" />
+      <module name="Droid_Coven.practice.quizprogress.quizprogress_presentation" target="11" />
+      <module name="Droid_Coven.topics.topics_data" target="11" />
+      <module name="Droid_Coven.topics.topics_domain" target="11" />
+      <module name="Droid_Coven.topics.topics_presentation" target="11" />
+      <module name="Droid_Coven.useraccount.useraccount_data" target="11" />
+      <module name="Droid_Coven.useraccount.useraccount_domain" target="11" />
+      <module name="Droid_Coven.useraccount.useraccount_presentation" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
