@@ -3,7 +3,7 @@ plugins {
     kotlin("android")
     id("dagger.hilt.android.plugin")
     id("kotlin-kapt")
-//    id("org.jlleitschuh.gradle.ktlint")
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
 android {
@@ -41,16 +41,10 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = Compose.composeCompilerVersion
     }
-    packagingOptions {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
-    }
 }
 
 dependencies {
 
-    implementation(Compose.compiler)
     implementation(Compose.ui)
     implementation(Compose.uiToolingPreview)
     implementation(Compose.hiltNavigationCompose)
@@ -101,13 +95,7 @@ dependencies {
     androidTestImplementation(Testing.testRunner)
 }
 
-
-//task.register("installGitHook", Copy::class) {
-//    def suffix("macos")
-//    from new File("${rootProject.rootDir}", "scripts/pre-commit-$suffix")
-//    into { new File("${rootProject.rootDir}.git/hooks") }
-//    rename("pre-commit-$suffix", 'pre-commit')
-//    fileMode 0775
-//}
-
-//tasks.getByPath(':app:preBuild').dependsOn installGitHook
+ktlint {
+    android.set(true)
+    outputColorName.set("RED")
+}
