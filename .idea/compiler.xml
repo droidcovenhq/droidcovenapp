@@ -3,6 +3,9 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="Droid_Coven.app" target="11" />
+      <module name="Droid_Coven.buildSrc" target="11" />
+      <module name="Droid_Coven.buildSrc.main" target="11" />
+      <module name="Droid_Coven.buildSrc.test" target="11" />
       <module name="Droid_Coven.goalcreation.goalcreation_data" target="11" />
       <module name="Droid_Coven.goalcreation.goalcreation_domain" target="11" />
       <module name="Droid_Coven.goalcreation.goalcreation_presentation" target="11" />
